@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+
+
+    <PreferenceCategory android:title="@string/title_server_category">
+        <EditTextPreference
+            android:key="tiempo_GPS"
+            android:inputType="number"
+            android:title="@string/title_config_server"
+            android:summary="@string/summary_config_server"
+            android:defaultValue="5" />
+
+
+        <EditTextPreference
+            android:key="distancia_GPS"
+            android:inputType="number"
+            android:title="@string/title_config_port"
+            android:summary="@string/summary_config_port"
+            android:defaultValue="0" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="EJEMPLOS DE CONFIGURACIÓN">
+    <EditTextPreference
+
+
+        android:summary="                        60000 ms==>1 minuto\n
+                       300000 ms==>5 minutos\n
+                       900000 ms==>15 minutos\n
+                       1800000 ms==>30 minutos\n
+                       3600000 ms==>1 hora"
+
+        android:defaultValue="100"
+       />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">Localizador</string>
+    <string name="action_settings">Configurar GPS</string>
+    <string name="title_activity_maps">Mapas</string>
+    <string name="title_activity_login">Login</string>
+
+    <string name="localizador_salir">Pulse otra vez para salir</string>
+    <string name="usuarionoexist">El usuario y/o la contraseña no existen en la BB.DD.</string>
+    <string name="avisoaltausuario">Para registrarte debes rellenar los campos nombre, email, teléfono y contraseña</string>
+    <string name="avisologarseusuario">Para entrar en la aplicación debes rellenar los campos nombre y contraseña</string>
+    <string name="title_activity_inicio">Inicio</string>
+    <string name="rellena_los_campos_para_entrar_en_la_app">Rellena los datos para entrar</string>
+    <string name="rellena_los_campos_para_registrarte">Rellena los campos para registrarte</string>
+    <string name="introduce_el_nombre">Introduce el nombre</string>
+    <string name="guardar_registro">Crear cuenta</string>
+    <string name="inicio">Iniciando sesión...</string>
+
+    <string name="info_text">Necesitas tener creada una cuenta para iniciar la aplicación</string>
+    <string name="crear_boton">CREAR CUENTA</string>
+    <string name="nombre_input">Nombre</string>
+    <string name="contrasena_input">Constraseña</string>
+    <string name="recordar_check">Recordarme</string>
+    <string name="olvidar_text">¿Olvidaste tu Contraseña?</string>
+    <string name="entrar_boton">ENTRAR</string>
+    <string name="necesitas_tener_una_cuenta_para_acceder">Necesitas tener una Cuenta para acceder...</string>
+    <string name="si_ya_tienes_una_cuenta_haz_click">Si ya tienes una cuenta haz click...</string>
+
+    <string name="info_tab1">\tÚltimas\nposiciones</string>
+    <string name="info_tab2">Todas las\nposiciones</string>
+    <string name="info_tab3">\t\tTus\nposiciones</string>
+    <string name="info_tab4">Por\nUsuario</string>
+
+    <string name="map_tipo_terreno">MapaMundi tipo terreno</string>
+    <string name="map_tipo_satelite">MapaMundi tipo satélite</string>
+    <string name="map_tipo_hibrido">MapaMundi tipo híbrido</string>
+    <string name="map_tipo_normal">MapaMundi tipo normal</string>
+
+
+    <!--Para las pestañaas del Inicio_TabLayout de material desing-->
+    <string name="page1">Page 1</string>
+    <string name="page2">Page 2</string>
+    <string name="page3">Page 3</string>
+    <string name="page4">Page 4</string>
+    <string name="action_about">About</string>
+    <string name="sing_up">Sing Up</string>
+    <string name="alta_registro_ok">Ya tienes creada la cuenta. Introduce tu login y tu contraseña para en entrar en la aplicación</string>
+    <string name="alta_registro_repeat">Esa cuenta de usuario ya existe en nuestra Base de Datos</string>
+    <string name="alta_usuario_error">No se ha podido dar de alta el usuario</string>
+    <string name="localizacion_insertada">Tus datos de posicionamiento acaban de ser enviados al Servidor</string>
+    <string name="localizacion_insertada_desdeServicio">Tus datos de posicionamiento acaban de ser enviados al Servidor desde el Servicio</string>
+
+    <string name="localizacion_error">La localización no pudo insertarse</string>
+    <string name="gps_habilitado">GPS habilitado</string>
+    <string name="gps_deshabilitado">GPS deshabilitado</string>
+    <string name="configurargps">Configurar GPS</string>
+    <string name="crear_cuenta">CREAR CUENTA</string>
+    <string name="iniciar">INICIAR</string>
+    <string name="transfiriendo_datos">Transfiriendo datos… espera por favor.</string>
+    <string name="saludo">Me alegro de verte...</string>
+    <string name="parar_servicio">Parar Servicio</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="title_activity_preferencias">Preferencias de la aplicación</string>
+    <!-- Valores para SharePreferences-->
+    <string name="title_user_category">CONFIGURACIÓN PARA LA SINCRONIZACIÓN</string>
+    <string name="title_config_username">Usuario</string>
+    <string name="config_username">Usuario para la sincronización de los datos</string>
+
+    <string name="title_swipe_refresh">Activar Sincronización</string>
+    <string name="summary_swipe_refresh">Deslizar para activar</string>
+
+    <string name="title_server_category">CONFIGURACIÓN VALORES DEL GPS</string>
+    <string name="title_config_server">Tiempo actualización GPS en minutos</string>
+    <string name="summary_config_server">Introduce el tiempo en minutos</string>
+
+    <string name="title_config_port">Distancia de actualización del GPS en metros</string>
+    <string name="summary_config_port">Introduce la distancia de actualización en metros</string>
+
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value"/>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+</resources>

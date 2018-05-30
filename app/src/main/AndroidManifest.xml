@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.antonio.localizador">
+
+    <!-- Permisos para conectarse a internet -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!--
+    Permisos para conectarse a red y obtener información desde todas las localizadores de los proveedores
+    : red, gps...
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--ACCESS_COARSE_LOCATION permite que la API use datos de Wi-Fi o datos móviles de telefonía celular
+     (o de ambos sistemas) para determinar la ubicación del dispositivo. La API
+     devuelve la ubicación con una precisión casi equivalente a un bloque de casas.-->
+   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--ACCESS_FINE_LOCATION es mucho más precisa:permite que la API determine la ubicación manera más precisa posible a través de los proveedores
+    de ubicaciones disponibles, entre los que se incluyen el sistema de posicionamiento global (GPS) y
+    los datos de Wi-Fi y los datos móviles telefonía celular.-->
+   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+   <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+
+   <application
+       android:allowBackup="true"
+       android:icon="@mipmap/ic_launcher"
+       android:label="@string/app_name"
+       android:roundIcon="@mipmap/ic_launcher_round"
+       android:supportsRtl="true"
+       android:theme="@style/AppTheme">
+       <service
+           android:name=".ServicioLocalizaciones"
+           android:enabled="true"
+           android:exported="true"/>
+
+       <activity android:name=".MainActivity"
+                 android:theme="@style/AppTheme.NoActionBar">
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN"/>
+
+               <category android:name="android.intent.category.LAUNCHER"/>
+           </intent-filter>
+
+       </activity>
+       <activity
+           android:name=".PararServicio"
+           android:label="@string/app_name">
+
+
+
+       </activity>
+       <activity
+           android:name=".Login"
+           android:label="@string/app_name"
+           android:parentActivityName=".MainActivity"
+           android:theme="@style/CustomPopUp"
+           android:windowSoftInputMode="stateHidden">
+           <meta-data
+               android:name="android.support.PARENT_ACTIVITY"
+               android:value=".MainActivity"/>
+       </activity>
+
+       <activity
+           android:name=".SettingsActivity"
+           android:label="@string/title_activity_preferencias"
+           android:parentActivityName=".MainActivity">
+           <meta-data
+               android:name="android.support.PARENT_ACTIVITY"
+               android:value=".MainActivity" />
+
+           <!-- - Autogenera botón para regresar a la activity padre -->
+
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              tools:context="com.antonio.localizador.MainActivity"
+              android:background="@drawable/degradado_fondo"
+              android:id="@+id/contenedor"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/seriem_opt"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/necesitas_tener_una_cuenta_para_acceder"
+        android:id="@+id/textView3"
+       android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#eceff1"
+        android:typeface="sans"/>
+
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/crear_cuenta"
+        android:id="@+id/btnRegistrarse"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:typeface="sans"
+        android:background="@drawable/tunear_button"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/si_ya_tienes_una_cuenta_haz_click"
+        android:id="@+id/textView2"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#eceff1"
+        android:typeface="sans"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/iniciar"
+        android:id="@+id/btnLogin"
+        android:enabled="false"
+        android:background="@drawable/colorear_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textSize="14sp" />
+
+
+</LinearLayout>
